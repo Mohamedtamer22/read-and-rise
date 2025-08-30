@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Read & Rise – اقرأ وارتقي</title>
+    <style>
+      :root {
+        --primary-color: #6c5ce7;
+        --secondary-color: #00cec9;
+        --accent-color: #fdcb6e;
+        --dark-color: #2d3436;
+        --light-color: #f5f6fa;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      body {
+        background: var(--light-color);
+        color: var(--dark-color);
+        line-height: 1.6;
+      }
+      header {
+        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        color: white;
+        padding: 2rem 1rem;
+        text-align: center;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+      }
+      header .logo {
+        font-size: 2.8rem;
+        font-weight: bold;
+      }
+      nav {
+        background: var(--dark-color);
+        padding: 1rem;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+      }
+      nav ul li {
+        margin: 0 1rem;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        transition: 0.3s;
+      }
+      nav ul li a:hover {
+        background: var(--primary-color);
+      }
+      .hero {
+        background: url("https://img.freepik.com/free-photo/futuristic-education-illustration_23-2151003867.jpg")
+          no-repeat center center/cover;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        position: relative;
+      }
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+      }
+      .hero-content {
+        z-index: 2;
+        position: relative;
+        max-width: 800px;
+        padding: 0 2rem;
+      }
+      .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+      .hero p {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+      }
+      .btn {
+        background: var(--accent-color);
+        color: var(--dark-color);
+        padding: 0.8rem 1.5rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      .btn:hover {
+        background: #e1b12c;
+        transform: translateY(-3px);
+      }
+      .section-title {
+        text-align: center;
+        margin: 3rem 0 2rem;
+        font-size: 2rem;
+        color: var(--primary-color);
+      }
+      .features,
+      .interact {
+        max-width: 1200px;
+        margin: auto;
+        padding: 2rem;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+      .card {
+        background: white;
+        padding: 2rem;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      }
+      .card h3 {
+        margin-bottom: 1rem;
+        color: var(--secondary-color);
+      }
+      footer {
+        background: var(--dark-color);
+        color: white;
+        text-align: center;
+        padding: 2rem 0;
+        margin-top: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Read & Rise – اقرأ وارتقي</div>
+      <p>محو الأمية باستخدام الذكاء الاصطناعي + الواقع المعزز</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#features">المميزات</a></li>
+        <li><a href="#voice">المساعد الصوتي</a></li>
+        <li><a href="#ar">التعلم بالواقع المعزز</a></li>
+        <li><a href="#games">الألعاب</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>تعلم بطريقة حديثة وتفاعلية</h1>
+        <p>جرّب نطق الكلمات بالصوت واكتشف النصوص من البيئة من خلال الكاميرا.</p>
+        <a href="#features" class="btn">ابدأ الآن</a>
+      </div>
+    </section>
+
+    <!-- المميزات -->
+    <h2 class="section-title">مميزات المنصة</h2>
+    <div class="features">
+      <div class="card">
+        <h3>المساعد الصوتي الذكي</h3>
+        <p>تكرار الكلمات وتصحيح النطق لحظة بلحظة باستخدام AI.</p>
+      </div>
+      <div class="card">
+        <h3>الواقع المعزز</h3>
+        <p>التقاط الكلمات من البيئة (OCR + AR) وربطها بالصور والمعاني.</p>
+      </div>
+      <div class="card">
+        <h3>التحديات والألعاب</h3>
+        <p>كسب النقاط والجوائز عند نطق الكلمات بشكل صحيح.</p>
+      </div>
+    </div>
+
+    <!-- التفاعل -->
+    <h2 class="section-title" id="voice">جرّب بنفسك</h2>
+    <div class="interact">
+      <div class="card">
+        <h3>المساعد الصوتي</h3>
+        <button class="btn" onclick="startRecording()">🎙️ اضغط للتسجيل</button>
+        <p id="voice-output">قل الكلمة وسيتم تقييم نطقك.</p>
+      </div>
+      <div class="card" id="ar">
+        <h3>التعلم بالواقع المعزز</h3>
+        <button class="btn" onclick="openCamera()">📷 افتح الكاميرا</button>
+        <video id="camera" autoplay playsinline style="width:100%; display:none;"></video>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 Read & Rise. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+      // تشغيل المساعد الصوتي (Web Speech API)
+      function startRecording() {
+        if (!('webkitSpeechRecognition' in window)) {
+          document.getElementById('voice-output').innerText =
+            "المتصفح لا يدعم خاصية التعرف على الصوت.";
+          return;
+        }
+        const recognition = new webkitSpeechRecognition();
+        recognition.lang = "ar-SA";
+        recognition.onresult = function (event) {
+          const text = event.results[0][0].transcript;
+          document.getElementById("voice-output").innerText = "قلت: " + text;
+        };
+        recognition.start();
+      }
+
+      // تشغيل الكاميرا (getUserMedia)
+      function openCamera() {
+        const video = document.getElementById("camera");
+        navigator.mediaDevices
+          .getUserMedia({ video: true })
+          .then((stream) => {
+            video.srcObject = stream;
+            video.style.display = "block";
+          })
+          .catch((err) => {
+            alert("لا يمكن فتح الكاميرا: " + err);
+          });
+      }
+    </script>
+  </body>
+</html>
